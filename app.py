@@ -73,7 +73,7 @@ def create_pdf(bill_no, date, work_order_no, customer_details, party_gst, vehicl
     pdf.set_font("Arial", 'B', 9)
     # New widths: sum equals 190. Particulars widened to 85.
     col_widths = [10, 85, 20, 15, 20, 40] 
-    headers = ["SI No", "Particulars", "HSN Code", "Qty", "Rate", "Amount"]
+    headers = ["SI No", "Particulars", "HSN Code", "Qty(sft)", "Rate", "Amount"]
     
     for i in range(len(headers)):
         pdf.cell(col_widths[i], 8, headers[i], border=1, align='C')
